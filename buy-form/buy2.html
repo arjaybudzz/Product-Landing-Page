@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Buy</title>
+        <link rel="stylesheet" href="buy.css"/>
+    </head>
+    <body>
+        <script defer src="buy2.js"></script>
+        <h1 id="product-payment-details">Payment Form</h1>
+        <div class="product-buy">
+            <div class="product-disc">
+                <img id="product" src="https://cdn.shopify.com/s/files/1/1383/0317/products/02_1366x1366_crop_center.jpg.webp?v=1612213971"/>
+                <p class="description">THE SHEARS 2.0</p>
+                <div id="pay-details">
+                    <input type="button" id="add" value="+" max="999"/>
+                    <input type="button" id="subtract" value="-" min="1"/>
+                    <label for="quantity" id="label">Quantity: </label>
+                    <output id="quantity" for="add subtract"></output>
+                    <label for="product-price" id="price">Total Price:</label>
+                    <output for="add subtract" id="product-price"></output>
+                </div>
+            </div>
+            <div id="payment-form">
+                <form class="credit-card">
+                    <div class="form-header">
+                      <h4 class="title">Credit card detail</h4>
+                    </div>
+
+                    <div class="form-body">
+                      <!-- Card Number -->
+                      <input type="text" class="card-number" placeholder="Card Number" required>
+
+                      <!-- Date Field -->
+                      <div class="date-field">
+                        <div class="month">
+                          <select name="Month" id="month-validity" required>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                          </select>
+                        </div>
+                        <div class="year">
+                          <select name="Year" id="year-validity" required>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!-- Card Verification Field -->
+                      <div class="card-verification">
+                        <div class="cvv-input">
+                          <input type="text" placeholder="CVV" id="cvv-validity" required>
+                        </div>
+                        <div class="cvv-details">
+                          <p id="cvv-info">3 or 4 digits usually found <br> on the signature strip</p>
+                        </div>
+                      </div>
+
+                      <!-- Buttons -->
+                      <button type="submit" id="proceed-btn">Proceed</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </body>
+</html>
