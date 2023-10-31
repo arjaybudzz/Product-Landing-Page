@@ -1,0 +1,111 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://th.bing.com/th/id/R.3b506a94dc4d86833756068fa0f8c320?rik=3ZMitxSYFp%2b1AQ&riu=http%3a%2f%2fwebneel.com%2fwallpaper%2fsites%2fdefault%2ffiles%2fimages%2f08-2014%2f1-black-wallpaper-pattern.1366.jpg&ehk=YqPFR5iEEUpXAJVXrVFLp0Ripmz8opq4crUb7to1qNg%3d&risl=&pid=ImgRaw&r=0);
+}
+
+label {
+    font-size: 25px;
+    color: white;
+}
+
+#instruction {
+    color: white;
+    text-align: center;
+}
+
+#registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#name, #email-password {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#first-name, #last-name {
+    width: 180px;
+    height: 25px;
+    font-size: 20px;
+}
+
+#first-name {
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+#last-name {
+    margin-right: 110px;
+    margin-left: 80px;
+}
+
+#email, #password {
+    width: 215px;
+    height: 25px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#passwd-confirm-button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#confirm-password {
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#submit-button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+}
+
+
+@media only screen and (max-width: 390px) {
+
+    #registration-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #first-name-input, #last-name-input {
+        margin-left: -100px;
+        margin-bottom: 20px;
+    }
+
+    #first-name, #last-name {
+        margin-bottom: 20px;
+    }
+
+    #email-password {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+}

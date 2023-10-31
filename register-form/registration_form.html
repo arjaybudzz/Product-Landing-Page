@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registration</title>
+        <link rel="stylesheet" href="registration_form.css"/>
+    </head>
+    <body>
+        <script defer src="registration.js"></script>
+        <form id="registration-form">
+            <h1 id="instruction">Please Fill Up the Form Below</h1>
+            <div id="name">
+                <label id="first-name-input" for="first-name">First Name:</label>
+                <input type="text" placeholder="First Name" required id="first-name"/>
+                <label id="last-name-input" for="last-name">Last Name:</label>
+                <input type="text" placeholder="Last Name" required id="last-name"/>
+            </div>
+            <div id="email-password">
+                <label id="email-input" for="email">Email:</label>
+                <input type="email" placeholder="Email" required id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                <label id="password-input" for="password">Enter Password:</label>
+                <input type="password" placeholder="Password" required id="password"/>
+            </div>
+            <div id="passwd-confirm-button">
+                <label id="re-enter-password" for="confirm-password">Re-enter Password:</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required/>
+                <button id="submit-button" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </body>
+</html>

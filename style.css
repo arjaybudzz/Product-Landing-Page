@@ -1,0 +1,589 @@
+html, body {
+    width: 100%;
+    height: auto;
+    background-image: url(https://th.bing.com/th/id/R.3b506a94dc4d86833756068fa0f8c320?rik=3ZMitxSYFp%2b1AQ&riu=http%3a%2f%2fwebneel.com%2fwallpaper%2fsites%2fdefault%2ffiles%2fimages%2f08-2014%2f1-black-wallpaper-pattern.1366.jpg&ehk=YqPFR5iEEUpXAJVXrVFLp0Ripmz8opq4crUb7to1qNg%3d&risl=&pid=ImgRaw&r=0);
+}
+
+* {
+    margin: 0;
+}
+
+#header {
+    display: flex;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    background-color: white;
+    padding: 15px;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+#header-img {
+    width: 90%;
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: gray;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+#registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.log-in {
+    width: 100px;
+    height: 40px;
+    background-color: yellow;
+    font-size: 20px;
+    border-style: none;
+    margin-right: 10px;
+}
+
+.log-in:hover {
+    cursor: pointer;
+    background-color: rgb(180, 180, 0);
+}
+
+.log-in:active {
+    cursor: pointer;
+    background-color: rgb(255, 255, 100);
+}
+
+.register {
+    width: 125px;
+    height: 40px;
+    font-size: 20px;
+    border-style: none;
+    background-color: red;
+    color: white;
+    margin-right: 20px;
+}
+
+.register:hover {
+    cursor: pointer;
+    background-color: rgb(200, 0, 0);
+}
+
+.register:active {
+    background-color: rgb(255, 110, 110);
+}
+
+#profile-pic {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile {
+    width: 60px;
+    margin-right: 50px;
+    border-radius: 50px;
+    border: 1px black solid;
+}
+
+#hamburger {
+    display:none;
+}
+
+#modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+#modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shopee {
+    width: 50%;
+}
+
+#exit {
+    background-color: black;
+    color: white;
+    align-self:flex-start;
+    margin-left: 280px;
+}
+
+#banners {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 200px;
+    background-image: url("cropped.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#text-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#ad-exit {
+    align-self: flex-start;
+    justify-self: left;
+    margin-left: 20px;
+}
+
+#banner-text {
+    color: beige;
+    font-size: 30px;
+}
+
+#watch-button {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 25px;
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+}
+
+#watch-button:hover {
+    cursor: pointer;
+    background-color: rgba(153, 205, 50, 0.8);
+}
+
+#watch-button:active {
+    background-color: rgb(180, 240, 60);
+}
+
+#product-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#for-sale {
+    font-size: 70px;
+    color: white;
+}
+
+#product, #product2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+#product2 {
+    margin-left: -180px;
+    margin-top: 230px;
+}
+
+.product-img {
+    display: flex;
+    flex-direction: row;
+}
+
+#the-lawn-mower, #the-shears {
+    width: 500px;
+}
+
+.product-name {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#features, #features2 {
+    margin-left: 30px;
+}
+
+#features-list {
+    color: white;
+    font-size: 40px;
+}
+
+#feature-button, #feature-button2 {
+    display: none;
+}
+
+#product-features {
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+}
+
+#feature-exit, #feature-exit2 {
+    display: none;
+}
+
+#buttons, #buttons2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#buy, #buy2 {
+    width: 125px;
+    height: 40px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+#buy:hover, #buy2:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+#buy:active, #buy2:active {
+    background-color: rgb(255, 60, 60);
+}
+
+#add-to-cart, #add-to-cart2 {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+}
+
+#add-to-cart:hover, #add-to-cart2:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.7);
+}
+
+#add-to-cart:active, #add-to-cart2:hover {
+    background-color: rgb(255, 255, 120);
+}
+
+#product-demo, #product-demo2 {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+
+#product-demo:hover, #product-demo2:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+#product-demo:active, #product-demo2:active {
+    background-color: rgb(60, 60, 255);
+}
+
+#video, #video2 {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#exit-button, #exit-button2 {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 390px) {
+
+    html, body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    #header {
+        display: flex;
+    }
+
+    #nav-bar {
+        flex-direction: row;
+        height: 10px;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        margin-right: 150px;
+
+    }
+
+    #header-img {
+        width: 75px;
+        object-position: center;
+    }
+
+    #navlink-container {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 40px;
+        bottom: 1000px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .nav-link {
+        font-size: 0.6rem;
+        color: white;
+        background-color: white;
+    }
+
+    .nav-link a {
+        font-size: 1.2rem;
+    }
+    .log-in, .register {
+        width: 50px;
+        height: 20px;
+        font-size: 0.6rem;
+
+    }
+
+    .log-in {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    .register {
+        margin-right: 10px;
+    }
+
+    #profile {
+        width: 10%;
+    }
+
+    #hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        margin-right: 40px;
+        margin-left: -25px;
+    }
+
+    #hamburger-button {
+        width: 50%;
+        height: 40px;
+        border: none;
+        margin-right: 50px;
+        background-color: white;
+    }
+
+    #hamburger-button:active {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    #banners {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #text-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    #watch-button {
+        width: 200%;
+        height:20px;
+        margin-top: 20px;
+        font-size: 1rem;
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+    }
+
+    #jordan {
+        width: 35%;
+        margin-right: 2%;
+    }
+
+    #banner-text {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .menu {
+        width: 25px;
+        height: 1px;
+        background-color: black;
+        margin: 3px 0;
+    }
+
+    #product-list {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #for-sale {
+        font-size: 3rem;
+    }
+
+    #the-lawn-mower, #the-shears {
+        width: 200px;
+        margin-left: 25px;
+    }
+
+    #buttons, #buttons2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+
+    .product-name {
+        font-size: 1rem;
+    }
+
+    #buy, #add-to-cart, #product-demo, #feature-button {
+        margin: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+    #buy2, #add-to-cart2, #product-demo2, #feature-button2 {
+        margin: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+    #features, #features2 {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -10px;
+        padding-left: 20px;
+    }
+
+    #features-list {
+        font-size: 2rem;
+        text-align: left;
+        margin-top: -300px;
+        margin-left: -30px;
+    }
+
+    #product-features {
+        font-size: 1rem;
+        line-height: 30px;
+        margin-left: -40px;
+    }
+
+    #feature-button, #feature-button2 {
+        display: flex;
+        align-items: center;
+        background-color: green;
+        border: none;
+        font-size: 20px;
+        color: white;
+    }
+
+    #feature-exit,#feature-exit2 {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+        font-size: 20px;
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+    }
+
+    #product2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    #lawn, #shear {
+        width: 90%;
+    }
+}
+
